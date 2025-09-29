@@ -1,7 +1,10 @@
+from dotenv import load_dotenv
 import os
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
+
+load_dotenv()
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
